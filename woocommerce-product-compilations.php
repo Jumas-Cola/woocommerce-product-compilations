@@ -86,7 +86,7 @@ CREATE TABLE IF NOT EXISTS `wp_compilations` (
   FOREIGN KEY (user_id)
           REFERENCES wp_users(ID)
           ON DELETE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 ";
 
   dbDelta($sql);
@@ -105,7 +105,7 @@ CREATE TABLE IF NOT EXISTS `wp_compilation_post` (
   FOREIGN KEY (post_id)
           REFERENCES wp_posts(id)
           ON DELETE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 ";
 
   dbDelta($sql);
